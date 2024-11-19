@@ -1,0 +1,9 @@
+package org.bibhuti.mvc;
+
+Observer Pattern:
+Observable class allows models to register and notify observers.
+Observer interface defines the update() method, which is called when the model changes.
+Both ContactList and Contact extend Observable so they can notify their respective observers (the views).
+View as Observer:
+AddContactActivity and EditContactActivity implement the Observer interface, meaning they will update when the model changes.
+When a contact is added or edited, these views are notified and display the updated data.
